@@ -53,7 +53,7 @@ export default function SearchBox({updateWeather}){
                 <TextField id="outlined-basic" label="City" variant="outlined" required value={city} onChange={handleChange}/>
                 <br /><br />
                 <Button variant="outlined" type="submit">Search</Button>
-                {error&&<p style={{color:"red"}}>No city found</p>}
+                {error&&<p style={{color:"red"}}>City not found</p>}
             </form>
         </div>
     )
